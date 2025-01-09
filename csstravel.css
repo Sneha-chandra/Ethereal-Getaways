@@ -1,0 +1,185 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #444;
+    background: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    background: #1f2a44;
+    color: #f0f0f0;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: #c1c1c1;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #3a4e6d;
+}
+
+/* Video Section */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #f0f0f0;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.6);
+}
+
+.video-overlay h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 60px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.destination-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 280px;
+    cursor: pointer;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Country Info Section */
+.country-details {
+    display: none;
+    margin-top: 20px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    background: #3a4e6d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #162238;
+}
+
+#form-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+    display: none;
+}
